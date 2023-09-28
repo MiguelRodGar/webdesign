@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Tips</title>
+</head>
+
+<body>
+	<div>
+		<h2>1. The 'loading=lazy' attribute</h2>
+		<img src='image.jpg' loading='lazy' alt='No Carga'>
+	</div>
+
+	<div>
+		<h2>2. Email, call, and SMS links</h2>
+
+		<a href="mailto:{email}?subject={subject}&body={content}">
+			Send me an email
+		</a><br>
+
+		<a href="tel:{phone}">
+			Call me
+		</a><br>
+
+		<a href="sms:{phone}?body={content}">
+			Send me a message
+		</a>
+	</div>
+
+	<div>
+		<h2>3. Ordered lists `start` attribute</h2>
+		<ol start="42">
+			<li>Huevos</li>
+			<li>Leche</li>
+			<li>Miel</li>
+			<li>Queso</li>
+			<li>Desatascador</li>
+		</ol>
+
+		<div>
+			<h2>4. The 'meter' element</h2>
+			<label for="value1">Empty</label>
+			<meter id="value1" min="0" max="100" low="30" high="75" optimum="80" value="0"></meter>
+
+			<label for="value2">Medium</label>
+			<meter id="value2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+
+			<label for="value3">Full</label>
+			<meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="100"></meter>
+		</div>
+
+		<div>
+			<h2>5. HTML Native Search</h2>
+			<div class="wrapper">
+				<h1>
+					Native HTML Search
+				</h1>
+
+				<input list="items">
+
+				<datalist id="items">
+					<option value="Ivan">
+					<option value="Marta">
+					<option value="Alex">
+					<option value="Unai">
+					<option value="Angela">
+                    <option value="Isma">
+				</datalist>
+			</div>
+		</div>
+
+		<div>
+			<h2>6. Fieldset Element</h2>
+			<form>
+				<fieldset>
+					<legend>Choose your favorite subject</legend>
+
+					<input type="radio" id="iwd" name="subject" disabled>
+					<label for="Interface Web Design">Interface Web Design</label><br/>
+
+					<input type="radio" id="swd" name="subject">
+					<label for="Server Web Development">Server Web Development</label><br/>
+
+					<input type="radio" id="cwd" name="subject">
+					<label for="Client Web Development">Client Web Development</label>
+				</fieldset>
+			</form>
+		</div>
+
+		<div>
+			<h2>7. Window.opener</h2>
+
+			<a href="https://miguelrodgar.github.io/webdesign/" target="_blank" rel="noopener">
+				My website
+			</a>
+		</div>
+
+		<div>
+			<h2>8. Base Element</h2>
+
+			<head>
+				<base target="_blank">
+			</head>
+			<!-- This link will open in a new tab. -->
+			<div class="wrapper">
+				This link will be opened in a new tab: &nbsp;
+				<a href="https://miguelrodgar.github.io/webdesign/">
+					My website again
+				</a>
+			</div>
+		</div>
+
+		<div>
+			<h2>9. Favicon cache busting</h2>
+			<img src='image.jpg' loading='lazy' alt='Alternative Text'>
+		</div>
+
+		<div>
+			<h2>10. The `spellcheck` attribute</h2>
+			<label for="input1">spellcheck="true"</label>
+			<input type="text" id="input1" spellcheck="true">
+
+			<label for="input2">spellcheck="false"</label>
+			<input type="text" id="input2" spellcheck="false">
+		</div>
+
+		<div>
+			<h2>11. Native HTML sliders</h2>
+			<label for="volume">Volume: </label>
+			<input type="range" id="volume" name="volume" min="0" max="100">
+		</div>
+
+		<div>
+			<h2>12. HTML Accordion</h2>
+			<div class="wrapper">
+				<details>
+					<summary>
+						Click me to see more details
+					</summary>
+					<br>
+					<img src='prank.jpg' alt='Gotchu' height=100 width=100>
+				</details>
+			</div>
+		</div>
+
+		<div>
+			<h2>13. 'mark' tag</h2>
+			<p>Dont forget to <mark>aprove</mark> me.</p>
+		</div>
+
+		<div>
+			<h2>14. 'download' attribute</h2>
+
+			<a href='path/to/file' download>
+				Download
+			</a>
+		</div>
+
+		<div>
+			<h2>15. Performance tip</h2>
+
+			<picture>
+				<!-- load .webp image if supported -->
+				<source srcset="logo.webp" type="image/webp">
+
+				<!--
+ 	Fallback if `.webp` images or <picture> tag
+ 	not supported by the browser.
+ 	-->
+				<img src="logo.png" alt="logo">
+			</picture>
+		</div>
+
+		<div>
+			<h2>16. Video thumbnail</h2>
+
+			<video poster="path/to/image">
+		</div>
+
+		<div>
+			<h2>17. input type="search"</h2>
+			<form>
+				<label for="text">Input Type Text</label>
+				<input type="text" id="text" name="text">
+
+				<label for="search">Input Type Search</label>
+				<input type="search" id="search" name="search">
+			</form>
+		</div>
+
+		<div>
+			<h2>18. 'pre' tag</h2>
+
+			<h3>
+				With pre tag
+			</h3>
+
+			<pre>
+ 	.center {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;   
+ 	}           
+ 	</pre>
+
+			<h3>
+				Without pre tag
+			</h3>
+
+			<p>
+				.center {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				}
+			</p>
+		</div>
+
+</body>
+
+</html>
